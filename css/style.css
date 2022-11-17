@@ -1640,7 +1640,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
     z-index: 1;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 24px 0px;
+    padding: 70px 0px;
 }
     /* overflow-x: hidden; */
 }
@@ -1681,7 +1681,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   padding-right: 30px;
   margin-bottom: 0;
 }
-.vcamp-text-block-one .img-container {padding: 10px 10px;}
+.vcamp-text-block-one .img-container {padding: 40px 10px 0 0;}
 .vcamp-text-block-one .quote-wrapper {
   position: absolute;
   width: 410px;
@@ -10161,4 +10161,12 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 {
 	
 	width: 100%;
+}
+.play-store-icon-img
+{
+	max-width:200px;
+}
+.download-play-title
+{
+	padding-top:55px;
 }
