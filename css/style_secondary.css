@@ -112,12 +112,11 @@
 .ctn-preloader .animation-preloader .txt-loading .letters-loading {
   font-family: 'Recoleta';
   font-weight: 500;
-  letter-spacing: 0px;
+  letter-spacing: 15px;
   display: inline-block;
   color: rgb(0 0 0 / 14%);
   position: relative;
-  font-size: 50px;
-  font-family: 'gorditamedium';
+  font-size: 70px;
   line-height: 70px;
 }
 .ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {animation-delay: 0.2s;}
@@ -208,8 +207,6 @@ body {
   position: relative;
   line-height: 1.66em;
   color: var(--text-color);
-  background: url(../images/bg_01.png) no-repeat center;
-    background-size: cover;
 }
 .main-page-wrapper {overflow-x:hidden;}
 .h1,h1,.h2,h2,.h3,h3,.h4,h4,.h5,h5,.h6,h6 {color: var(--heading); font-weight: normal;}
@@ -291,7 +288,7 @@ body {
 }
 .title-style-two.white-vr .title {color: #fff;}
 .title-style-two .title span {
-  color: #000; 
+  color: var(--red-one); 
   position: relative;
   display: inline-block;
 }
@@ -299,11 +296,10 @@ body {
   content: '';
   position: absolute;
   width: 98%;
-  height: 0px;
+  height: 3px;
   background: var(--red-one);
   left: 2px;
   bottom: 4px;
-  display: none;
 }
 .title-style-three .title {
   font-family: 'Recoleta';
@@ -434,7 +430,7 @@ body {
 }
 .title-style-ten .title {
   font-family: 'gorditamedium';
-  font-size: 34px;
+  font-size: 42px;
   line-height: 1.22em;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -1635,15 +1631,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 .card-style-one .arrow-icon:hover img {transform: translateX(5px);}
 .card-style-one p {padding: 0 50px 32px 0; margin-bottom: 0;}
 /*^^^^^^^^^^^^^^^^^^^^^ Vcamp Text Block One ^^^^^^^^^^^^^^^^^^^^^^^^*/
-.vcamp-text-block-one {
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 70px 0px;
-}
-    /* overflow-x: hidden; */
-}
+.vcamp-text-block-one {position: relative; z-index: 1;}
 .vcamp-text-block-one .text-wrapper {padding-top: 40px;}
 .vcamp-text-block-one .video-icon {
   width: 65px;
@@ -1669,7 +1657,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   animation-delay:1s;
 }
 .vcamp-text-block-one .video-icon::after {animation-delay:3s;}
-.vcamp-text-block-one .meta-info-text {padding: 20px 0px;}
+.vcamp-text-block-one .meta-info-text {padding: 45px 0 50px;}
 .vcamp-text-block-one .text-wrapper h6 {
   font-family: 'gorditamedium';
   font-size: 25px;
@@ -1681,7 +1669,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   padding-right: 30px;
   margin-bottom: 0;
 }
-.vcamp-text-block-one .img-container {padding: 40px 10px 0 0;}
+.vcamp-text-block-one .img-container {padding: 0 0 50px 110px;}
 .vcamp-text-block-one .quote-wrapper {
   position: absolute;
   width: 410px;
@@ -2238,13 +2226,13 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 }
 .vcamp-footer-one .bottom-footer .footer-nav a:hover {text-decoration: underline;}
 .vcamp-footer-one .bottom-footer .copyright {font-size: 15px; margin: 0;}
-.social-icon a {
+.vcamp-footer-one .bottom-footer .social-icon a {
   font-size: 19px;
   margin-left: 19px;
   color: #333333;
   transition: all 0.3s ease-in-out;
 }
-.social-icon a:hover {color: var(--red-one);}
+.vcamp-footer-one .bottom-footer .social-icon a:hover {color: var(--red-one);}
 /*-- Dark Bg ---*/
 .vcamp-footer-one.dark-bg {
   position: relative;
@@ -3558,8 +3546,8 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 }
 .vcamp-footer-two .bottom-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 0px 0 0;
-  margin-top: 15px;
+  padding: 35px 0 0;
+  margin-top: 45px;
 }
 .vcamp-footer-two .bottom-footer .footer-nav a {
   font-family: 'gorditamedium';
@@ -5371,7 +5359,7 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
   background-size: cover;
   overflow-x: hidden;
 }
-.coming-soon-content {max-width: 1320px; margin: 0 auto; text-align: left;}
+.coming-soon-content {max-width: 860px; margin: 0 auto; text-align: center;}
 .coming-soon-content h6 {
   font-size: 16px;
   text-transform: uppercase;
@@ -10150,23 +10138,4 @@ body .theme-btn-eighteen:hover:before {background: #FF7961;}
 .fancy-banner-twelve .floating-text span {
   display: inline-block;
   animation: marquee 100s linear infinite;
-}
-.text-center
-{
-	text-align:center;
-	margin-top:30px;
-	
-}
-.dhundlo-logo
-{
-	
-	width: 100%;
-}
-.play-store-icon-img
-{
-	max-width:200px;
-}
-.download-play-title
-{
-	padding-top:55px;
 }
