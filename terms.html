@@ -78,7 +78,7 @@
 				<div class="inner-content">
 					<div class="d-flex align-items-center justify-content-between">
 						<div class="logo"><a href="/"><img src="images/dhundlo-logo.svg" alt="" width="180"></a></div>
-						<nav class="navbar navbar-expand-lg">
+						<nav id="nav" class="navbar navbar-expand-lg">
 							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						    	<span></span>
 						 	</button>
@@ -430,6 +430,14 @@
 
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
+    <script type="application/javascript">
+      function hideNav() {
+        var url = new URLSearchParams(window.location.search);
+        if(url.get('view') === 'true') {
+          $('#nav').hide();
+        }
+      }
+    </script>
 		</div> <!-- /.main-page-wrapper -->
 	</body>
 </html>
