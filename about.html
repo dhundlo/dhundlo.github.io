@@ -38,7 +38,7 @@
 		<![endif]-->	
 	</head>
 
-	<body onload="hideNav();">
+	<body >
 		<div class="main-page-wrapper">
 			<!-- ===================================================
 				Loading Transition
@@ -77,11 +77,11 @@
 			</section>
 
 			
-			<header class="theme-main-menu sticky-menu theme-menu-one">
+			<header id="header" class="theme-main-menu sticky-menu theme-menu-one">
 				<div class="inner-content">
 					<div class="d-flex align-items-center justify-content-between">
 						<div class="logo"><a href="/"><img src="images/dhundlo-logo.svg" alt="" width="180"></a></div>
-						<nav id="nav" class="navbar navbar-expand-lg">
+						<nav  class="navbar navbar-expand-lg">
 							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						    	<span></span>
 						 	</button>
@@ -121,7 +121,7 @@
 			-->
 			<div class="inside-hero-one hero-spacing">
 				<div class="container">
-					<h2 class="page-title font-recoleta">About us</h2>
+					<h2 id="h2" class="page-title font-recoleta">About us</h2>
 					<!-- <p>We’re empowering WordPress to do great things together</p> -->
 				</div>
 			</div> <!-- /.inside-hero-one -->
@@ -205,7 +205,7 @@ Here you will be able to find Daily needs Service Providers near you. So, now yo
 		<script src="js/theme.js"></script>
 
     <script type="application/javascript">
-      function hideNav() {
+      function hideContent() {
         var url = new URLSearchParams(window.location.search);
         if(url.get('view') === 'true') {
           $('#nav').hide();
